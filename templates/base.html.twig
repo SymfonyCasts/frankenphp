@@ -16,12 +16,12 @@
         {% endblock %}
     </head>
     <body style="background: radial-gradient(64.22% 64.22% at 50% 50%, #0641CD 0%, #210339 100%);" class="h-dvh lexend">
-        <div class="flex justify-between p-5">
+        <div class="flex justify-between py-5 px-7 lexend">
             <div class="bg-[url('../images/monster-lab-logo.png')] w-[170px] h-[30px] bg-contain bg-no-repeat"></div>
             <div>
-                <div class="bg-white uppercase font-extrabold text-[#1B0433] py-5 px-6 border-2 border-black rounded-xl relative">
+                <div class="bg-white hover:bg-gray-300 hover:cursor-pointer group w-[230px] uppercase font-extrabold text-[#1B0433] py-3 px-6 border-2 border-black rounded-xl relative">
                 All Monsters
-                    <img src="{{asset ('images/monster-btn.png')}}" class="absolute right-0 w-16 h-16"></img>
+                    <img src="{{asset ('images/monster-btn.png')}}" class="absolute -right-4 -top-4 -rotate-[0.3rad] group-hover:-rotate-[0.5rad] w-[70px] h-[70px]"></img>
                 </div>
             </div>
         </div>
