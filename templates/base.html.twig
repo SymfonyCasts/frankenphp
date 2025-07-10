@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+        
+        {% block stylesheets %}
+        {% endblock %}
+
+        {% block javascripts %}
+            {% block importmap %}{{ importmap('app') }}{% endblock %}
+        {% endblock %}
+    </head>
+    <body style="background: radial-gradient(64.22% 64.22% at 50% 50%, #0641CD 0%, #210339 100%);" class="h-dvh lexend">
+        <div class="flex justify-between p-5">
+            <div class="bg-[url('../images/monster-lab-logo.png')] w-[170px] h-[30px] bg-contain bg-no-repeat"></div>
+            <div>
+                <div class="bg-white uppercase font-extrabold text-[#1B0433] py-5 px-6 border-2 border-black rounded-xl relative">
+                All Monsters
+                    <img src="{{asset ('images/monster-btn.png')}}" class="absolute right-0 w-16 h-16"></img>
+                </div>
+            </div>
+        </div>
+        {% block body %}{% endblock %}
+    </body>
+</html>
