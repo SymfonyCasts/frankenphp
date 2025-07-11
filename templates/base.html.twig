@@ -15,7 +15,7 @@
             {% block importmap %}{{ importmap('app') }}{% endblock %}
         {% endblock %}
     </head>
-    <body style="background: radial-gradient(64.22% 64.22% at 50% 50%, #0641CD 0%, #210339 100%);">
+    <body style="background: radial-gradient(64.22% 64.22% at 50% 50%, #0641CD 0%, #210339 100%);" class="h-svh">
         <div class="flex justify-between py-5 px-7 lexend">
             <div class="bg-[url('../images/monster-lab-logo.png')] w-[170px] h-[30px] bg-contain bg-no-repeat"></div>
             <div>
@@ -26,5 +26,8 @@
             </div>
         </div>
         {% block body %}{% endblock %}
+        <div class="footer p-5 text-white">
+            Made with <span class="text-red-600 font-extrabold"><3</span> by the guys and gals at <a href="https://symfonycasts.com">SymfonyCasts</a>
+        </div>
     </body>
 </html>

@@ -15,4 +15,12 @@ final class MonsterController extends AbstractController
             'controller_name' => 'MonsterController',
         ]);
     }
+
+    #[Route('/monsters', name: 'app_monsters')]
+    public function monsters(): Response
+    {
+        return $this->render('monster/monsters.html.twig', [
+            'controller_name' => 'MonsterController',
+        ]);
+    }
 }

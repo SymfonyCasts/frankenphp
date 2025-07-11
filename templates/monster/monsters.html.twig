@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}All Monsters{% endblock %}
+
+{% block body %}
+    <div class="max-w-4xl mx-auto lexend">
+        <div class="uppercase text-4xl text-white text-center font-extrabold mb-14">All Monsters</div>
+        <div class="grid grid-cols-3 gap-4 justify-items-center">
+            <div class="col-span-1">
+                <div class="border-4 border-white rounded-2xl p-5">
+                    <img class="h-[200px]" src="{{asset ('images/full-monster.png')}}" alt="">
+                </div>
+            </div>
+            <div class="col-span-1">
+                <div class="border-4 border-white rounded-2xl p-5">
+                    <img class="h-[200px]" src="{{asset ('images/full-monster.png')}}" alt="">
+                </div>
+            </div>
+            <div class="col-span-1">
+                <div class="border-4 border-white rounded-2xl p-5">
+                    <img class="h-[200px]" src="{{asset ('images/full-monster.png')}}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
