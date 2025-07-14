@@ -15,19 +15,21 @@
             {% block importmap %}{{ importmap('app') }}{% endblock %}
         {% endblock %}
     </head>
-    <body style="background: radial-gradient(64.22% 64.22% at 50% 50%, #0641CD 0%, #210339 100%);" class="h-svh">
+    <body style="background: radial-gradient(64.22% 64.22% at 50% 50%, #0641CD 0%, #210339 100%);" class="">
         <div class="flex justify-between py-5 px-7 lexend">
-            <div class="bg-[url('../images/monster-lab-logo.png')] w-[170px] h-[30px] bg-contain bg-no-repeat"></div>
+            <a class="inline" href="/"><div class="bg-[url('../images/monster-lab-logo.png')] w-[170px] h-[30px] bg-contain bg-no-repeat"></div></a>
             <div>
-                <div class="bg-white hover:bg-gray-300 hover:cursor-pointer group w-[230px] uppercase font-extrabold text-[#1B0433] py-3 px-6 border-2 border-black rounded-xl relative">
-                All Monsters
-                    <img src="{{asset ('images/monster-btn.png')}}" class="absolute -right-4 -top-4 -rotate-[0.3rad] group-hover:-rotate-[0.5rad] w-[70px] h-[70px]"></img>
-                </div>
+                <a class="inline" href="/monsters">
+                    <div class="bg-white hover:bg-gray-300 hover:cursor-pointer group w-[230px] uppercase font-extrabold text-[#1B0433] py-3 px-6 border-2 border-black rounded-xl relative">
+                    All Monsters
+                        <img src="{{asset ('images/monster-btn.png')}}" class="absolute -right-4 -top-4 -rotate-[0.3rad] group-hover:-rotate-[0.5rad] w-[70px] h-[70px]"></img>
+                    </div>
+                </a>
             </div>
         </div>
         {% block body %}{% endblock %}
         <div class="footer p-5 text-white">
-            Made with <span class="text-red-600 font-extrabold"><3</span> by the guys and gals at <a href="https://symfonycasts.com">SymfonyCasts</a>
+            Made with <span class="text-red-600 font-extrabold"><3</span> by the guys and gals at <a class="underline" href="https://symfonycasts.com">SymfonyCasts</a>
         </div>
     </body>
 </html>
