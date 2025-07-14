@@ -91,5 +91,34 @@
         >Assemble</div>
     </a>
     </div>
+    {# Pretend Modal #}
+    <div class="w-[500px] h-[450px] p-5 border border-white" style="border-radius: 20px; background: radial-gradient(64.22% 64.22% at 50% 50%, #0641CD 0%, #210339 100%);">
+        <div class="flex justify-end">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <rect x="18.2031" width="8.19007" height="25.7402" rx="3" transform="rotate(45 18.2031 0)" fill="white"/>
+            <rect width="8.19007" height="25.7402" rx="3" transform="matrix(-0.707107 0.707107 0.707107 0.707107 5.79297 0)" fill="white"/>
+            </svg>
+        </div>
+        <img src="{{asset ('images/full-monster.png')}}" alt="" class="h-2/3 w-auto mx-auto">
+        <div class="text-2xl text-white text-center font-extrabold uppercase mb-6">It's alive!</div>
+        <div class="flex justify-between">
+            <a class="rounded-xl w-[190px] text-center lexend font-extrabold py-4 px-3 border-2 border-black bg-white hover:bg-gray-200" style="box-shadow: 0px 3px 2.4px 0px rgba(0, 0, 0, 0.60), 0px -4px 0px 0px rgba(0, 0, 0, 0.60) inset;" href="#">
+                <svg class="inline" xmlns="http://www.w3.org/2000/svg" width="26" height="20" viewBox="0 0 26 22" fill="none">
+                <path d="M2.47266 11.9019V16.7611C2.47266 18.5503 3.92304 20.0007 5.71218 20.0007H20.2901C22.0792 20.0007 23.5296 18.5503 23.5296 16.7611V11.9019" stroke="#1B0433" stroke-width="3.41703" stroke-linecap="round"/>
+                <path d="M12.9001 2V13.4715M12.9001 13.4715L8.14062 8.61789M12.9001 13.4715L17.6595 8.61789" stroke="#1B0433" stroke-width="3.41703" stroke-linecap="round"/>
+                </svg>
+                Download
+            </a>
+            <a class="rounded-xl w-[150px] text-center lexend font-extrabold py-4 px-3 border-2 border-black bg-white hover:bg-gray-200" style="box-shadow: 0px 3px 2.4px 0px rgba(0, 0, 0, 0.60), 0px -4px 0px 0px rgba(0, 0, 0, 0.60) inset;" href="#">
+                <svg class="inline" xmlns="http://www.w3.org/2000/svg" width="23" height="20" viewBox="0 0 23 22" fill="none">
+                <path d="M17.7126 4.58105L5.28906 10.7928L17.7126 18.454" stroke="#1B0433" stroke-width="3.31294" stroke-linecap="round"/>
+                <circle cx="17.9186" cy="4.58117" r="4.55529" fill="#1B0433"/>
+                <circle cx="17.9186" cy="17.4186" r="4.55529" fill="#1B0433"/>
+                <circle cx="5.08263" cy="10.379" r="4.55529" fill="#1B0433"/>
+                </svg>
+            Share</a>
+        </div>
+    </div>
+    {# End Pretend Modal #}
 </div>
 {% endblock %}
